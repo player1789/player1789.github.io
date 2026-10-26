@@ -152,58 +152,7 @@
 
 	<body ontouchstart="" class="body--light body--dark">
 
-<!-- 
-		<!-- ThemeColor -->
-		
-		<!-- ThemeColor -->
-<style type="text/css">
-  .body--light {
-    --light-mode: none;
-    --dark-mode: block;
-  }
-  .body--dark {
-    --light-mode: block;
-    --dark-mode: none;
-  }
-  i.mdui-icon.material-icons.light-mode {
-    display: var(--light-mode);
-  }
-  i.mdui-icon.material-icons.dark-mode {
-    display: var(--dark-mode);
-  }
-</style>
-<button class="toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
-  <i class="mdui-icon material-icons light-mode"></i>
-  <i class="mdui-icon material-icons dark-mode"></i>
-</button>
-<script>
-  function getCookieValue(name) {
-    var match = document.cookie.match('(^|[^;]+)\\s*' + name + '\\s*=\\s*([^;]+)');
-    return match ? match.pop() : '';
-  }
 
-  var savedTheme = getCookieValue('sb-color-mode');
-  if (savedTheme === 'dark' || savedTheme === 'light') {
-    document.body.classList.toggle('body--dark', savedTheme === 'dark');
-  }
-
-  var toggleBtn = document.querySelector('.toggle');
-  function updateThemeToggle() {
-    toggleBtn.setAttribute('aria-pressed', String(document.body.classList.contains('body--dark')));
-  }
-  updateThemeToggle();
-
-  toggleBtn.addEventListener('click', function () {
-    document.body.classList.toggle('body--dark');
-    var theme = document.body.classList.contains('body--dark') ? 'dark' : 'light';
-    var exp = new Date();
-    exp.setFullYear(exp.getFullYear() + 1);
-    document.cookie = 'sb-color-mode=' + theme + ';expires=' + exp.toUTCString() + ';path=/;SameSite=Lax';
-    updateThemeToggle();
-  });
-</script>
-
-		 -->
 
 		<!-- Gitter -->
 		
@@ -636,11 +585,11 @@ This LiveMyLife theme created by Vincent modified from the original Porter YenYu
       <li>Hello World</li>
     </a>
     
-    <a href="Hexo-Theme-LiveMyLife/">
+    <a href="../cn/Hexo-Theme-LiveMyLife/">
       <li>Hexo-Theme-LiveMyLife</li>
     </a>
     
-    <a href="../cn/Hexo-Theme-LiveMyLife/">
+    <a href="Hexo-Theme-LiveMyLife/">
       <li>Hexo-Theme-LiveMyLife</li>
     </a>
     
